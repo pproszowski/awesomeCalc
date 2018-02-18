@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    buffer = new Buffer(ui->mainLabel, ui->historyTextBrowser, ui->resultLabel);
     createButtons();
-    this->buffer = new Buffer(ui->mainLabel, ui->historyTextBrowser, ui->resultLabel);
 }
 
 void MainWindow::createButtons(){
@@ -51,11 +51,10 @@ void MainWindow::connectButton(QPushButton* pushButton, Button* button, QSignalM
 
 void MainWindow::handleButton(QObject* btn){
     Button* button = static_cast<Button*>(btn);
-    button->sendInfoToBuffer(this->buffer);
+    button->sendInfoToBuffer(buffer);
 }
 
 MainWindow::~MainWindow()
 {
-    delete this->buffer;
     delete ui;
 }

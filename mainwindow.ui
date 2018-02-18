@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
-    <height>300</height>
+    <width>258</width>
+    <height>402</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -164,8 +164,7 @@ background-color: #818181;
 
 QPushButton#zeroButton
 {
-text-align: left;
-padding-left: 43px;
+text-align:  center;
 }</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -197,6 +196,12 @@ padding-left: 43px;
       </property>
       <item>
        <widget class="QTextBrowser" name="historyTextBrowser">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <pointsize>12</pointsize>
@@ -235,7 +240,7 @@ border: inset black 0.5px;
 color:white;</string>
         </property>
         <property name="text">
-         <string>0</string>
+         <string/>
         </property>
         <property name="alignment">
          <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>

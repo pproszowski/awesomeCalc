@@ -24,7 +24,10 @@ SOURCES += main.cpp\
     buffer.cpp \
     operatorbutton.cpp \
     digitbutton.cpp \
-    equalbutton.cpp
+    equalbutton.cpp \
+    history.cpp \
+    result.cpp \
+    maindisplay.cpp
 
 HEADERS  += mainwindow.h \
     button.h \
@@ -36,7 +39,10 @@ HEADERS  += mainwindow.h \
     buffer.h \
     operatorbutton.h \
     digitbutton.h \
-    equalbutton.h
+    equalbutton.h \
+    history.h \
+    result.h \
+    maindisplay.h
 
 FORMS    += mainwindow.ui
 

@@ -4,6 +4,9 @@
 #include <string>
 #include <QLabel>
 #include <QTextBrowser>
+#include "maindisplay.h"
+#include "history.h"
+#include "result.h"
 
 class Buffer
 {
@@ -16,16 +19,12 @@ public:
     void display();
     void equal();
 private:
-    bool canPutDot;
-    bool canPutOperator;
     std::vector< std::vector<int> > numbers;
     std::vector<int> operators;
     std::string toDisplay;
-    QLabel* main;
-    QLabel* result;
-    QTextBrowser* history;
-    QString mainString;
-    QString historyString;
+    MainDisplay main;
+    History history;
+    Result result;
 
 };
 
